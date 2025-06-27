@@ -1,6 +1,10 @@
+import 'package:estim_admin_photo/pages/classe.dart';
 import 'package:estim_admin_photo/pages/d_menu.dart';
+import 'package:estim_admin_photo/pages/dashboard.dart';
 import 'package:estim_admin_photo/pages/date_lieu.dart';
 import 'package:estim_admin_photo/pages/details_page.dart';
+import 'package:estim_admin_photo/pages/home.dart';
+import 'package:estim_admin_photo/pages/notes.dart';
 import 'package:estim_admin_photo/pages/photo.dart';
 import 'package:estim_admin_photo/pages/login_page.dart';
 import 'package:flutter/material.dart';
@@ -37,10 +41,13 @@ class Application extends StatelessWidget {
         //   name: '/',
         //   page: () => const LoginPage(),
         // ),
-        GetPage(name: '/', page: () => const HomePage()),
-        GetPage(name: '/details', page: () => const MenuDestails()),
-        GetPage(name: '/photo', page: () => const PhotoView()),
-        GetPage(name: '/date-lieu', page: () => const AjoutInfosPage()),
+        GetPage(name: '/', page: () => const EstimMainDashboard()),
+        GetPage(name: '/classes', page: () => const EstimClassesPage()),
+        GetPage(name: '/notes', page: () => const EstimNotesPage()),
+        // GetPage(name: '/', page: () => const HomePage()),
+        GetPage(name: '/details', page: () => const EstimDetailsPage()),
+        GetPage(name: '/photo', page: () => const EstimPhotoPage()),
+        GetPage(name: '/date-lieu', page: () => const EstimDateLieuPage()),
       ],
     );
   }
