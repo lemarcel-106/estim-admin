@@ -1,0 +1,60 @@
+name: estim_admin_photo
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_easyloading: ^3.0.5
+  flutter_native_splash: ^2.4.6
+  get: ^4.7.2
+  http: ^1.4.0
+  image_cropper: ^9.1.0
+  image_picker: ^1.1.2
+  mime: ^2.0.0
+  path: ^1.9.1
+  permission_handler: ^12.0.0+1
+  flutter_localization: ^0.3.2
+  drop_down_list: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+  
+  fonts:
+    - family: font1
+      fonts:
+        - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
+          style: normal
+
+    - family: font2
+      fonts:
+        - asset: assets/fonts/Montserrat-Italic-VariableFont_wght.ttf
+          style: italic
+
+
+
+flutter_native_splash:
+  color: "#ffffff"          # Couleur de fond
+  image: assets/images/logo.png  # Chemin du logo
+  android: true
+  ios: true
+  web: false
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/playstore.png"
